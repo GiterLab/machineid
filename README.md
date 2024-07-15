@@ -4,7 +4,7 @@
 
 … because sometimes you just need to reliably identify your machines.
 
-[![GoDoc](https://godoc.org/github.com/denisbrodbeck/machineid?status.svg)](https://godoc.org/github.com/denisbrodbeck/machineid) [![Go Report Card](https://goreportcard.com/badge/github.com/denisbrodbeck/machineid)](https://goreportcard.com/report/github.com/denisbrodbeck/machineid)
+[![GoDoc](https://godoc.org/github.com/GiterLab/machineid?status.svg)](https://godoc.org/github.com/GiterLab/machineid) [![Go Report Card](https://goreportcard.com/badge/github.com/GiterLab/machineid)](https://goreportcard.com/report/github.com/GiterLab/machineid)
 
 ## Main Features
 
@@ -18,13 +18,13 @@
 Get the library with
 
 ```bash
-go get github.com/denisbrodbeck/machineid
+go get github.com/GiterLab/machineid
 ```
 
 You can also add the cli app directly to your `$GOPATH/bin` with
 
 ```bash
-go get github.com/denisbrodbeck/machineid/cmd/machineid
+go get github.com/GiterLab/machineid/cmd/machineid
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ package main
 import (
   "fmt"
   "log"
-  "github.com/denisbrodbeck/machineid"
+  "github.com/GiterLab/machineid"
 )
 
 func main() {
@@ -55,7 +55,8 @@ package main
 import (
   "fmt"
   "log"
-  "github.com/denisbrodbeck/machineid"
+
+  "github.com/GiterLab/machineid"
 )
 
 func main() {
@@ -113,7 +114,8 @@ import (
   "crypto/hmac"
   "crypto/sha256"
   "fmt"
-  "github.com/denisbrodbeck/machineid"
+
+  "github.com/GiterLab/machineid"
 )
 
 const appKey = "WowSuchNiceApp"
@@ -168,14 +170,12 @@ Windows:
 ```batch
 reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography /v MachineGuid
 ```
+
 or
+
 * Open Windows Registry via `regedit`
 * Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
 * Take value of key `MachineGuid`
-
-## Credits
-
-The Go gopher was created by [Denis Brodbeck](https://github.com/denisbrodbeck) with [gopherize.me](https://gopherize.me/), based on original artwork from [Renee French](http://reneefrench.blogspot.com/).
 
 ## License
 
